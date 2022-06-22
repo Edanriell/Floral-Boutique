@@ -1,0 +1,73 @@
+=fixImage
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+
+=headerFont
+  font-family: "SourceSansPro-Regular"
+  font-weight: 400
+  font-style: normal
+  font-size: 1.8rem
+  line-height: 2.263rem
+
+.page-header
+  background: #E5E5E5
+  grid-row: header
+
+  &__logotype
+    grid-column: 1 / 2
+    width: 177px
+    height: 17px
+    +fixImage
+    
+  &__main-nav
+    display: grid
+    grid-template-columns: auto 1fr auto auto
+    column-gap: 56px
+    min-height: 124px
+    align-items: center
+
+    &__content
+      grid-column: 2 / 3
+      display: flex
+      flex-wrap: wrap
+      margin: 0 0 0 44px
+
+      &__menu-item
+        list-style: none
+        +headerFont
+        margin: 0 35px 0 0
+
+        &:last-child
+          margin: 0
+
+        &__link
+          text-decoration: none
+          color: rgba(64, 57, 59, 1)
+          transition: all 0.25s
+          
+          &:hover
+            color: #2e292a
+
+  &__phone
+    grid-column: 3 / 4
+    +headerFont
+
+    &__link
+      text-decoration: none
+      color: rgba(64, 57, 59, 1)
+
+  &__cart
+    display: block
+    grid-column: 4 / 5
+    width: 24px
+    height: 24px
+    background-image: url("../img/icons/shopping-bag.svg")
+    background-color: transparent
+    background-position: 50% 50%
+    background-size: cover
+    background-repeat: no-repeat
+    transition: all 0.2s ease-in-out
+    &:hover
+      transform: scale(1.25)
+    

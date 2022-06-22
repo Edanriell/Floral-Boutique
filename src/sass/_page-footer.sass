@@ -1,0 +1,72 @@
+=fixImage
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+
+.page-footer
+  background: rgba(222, 217, 213, 1)
+  grid-row: footer
+
+  &__content
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr
+    column-gap: 50px
+    min-height: 183px
+    align-items: center
+
+    &__logotype
+      width: 177px
+      height: 17px
+      +fixImage
+      justify-self: start
+
+    &__menu
+      justify-self: center
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+
+      &__item
+        font-family: "SourceSansPro-Regular"
+        font-weight: 400
+        font-style: normal
+        font-size: 1.8rem
+        line-height: 2.263rem
+        margin: 0 35px 0 0
+
+        &:last-child
+          margin: 0
+
+        &__link
+          text-decoration: none
+          color: rgba(64, 57, 59, 1)
+          transition: all 0.25s
+          
+          &:hover
+            color: #2e292a
+
+    &__social-btns
+      justify-self: end
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+
+      &__item
+        margin: 0 25px 0 0
+
+        &:last-child
+          margin: 0
+
+        &__link
+          text-decoration: none
+
+        &__icon
+          display: block
+          width: 20px
+          height: 20px
+          +fixImage
+          transition: all 0.2s ease-in-out
+
+          &:hover
+            transform: scale(1.25) rotate(20deg)
+          

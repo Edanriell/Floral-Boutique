@@ -1,0 +1,51 @@
+@import "~normalize.css"
+
+@import "./fonts/merriweather"
+@import "./fonts/source-sans-pro"
+
+@import "page-header"
+@import "page-catalog"
+@import "page-footer"
+@import "page-error"
+@import "page-animations"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+
+html
+  font-size: 62.5%
+  scroll-behavior: smooth
+
+body
+  display: grid
+  grid-template-rows: [header] auto [main] 1fr [footer] auto
+  min-width: 1440px
+  min-height: 100vh
+  font-family: "SourceSansPro-Regular"
+  font-weight: 400
+  font-style: normal
+  font-size: 1.8rem
+  line-height: 2.263rem
+  color: rgba(64, 57, 59, 1)
+
+.container
+  width: 1240px
+  margin: 0 auto
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden

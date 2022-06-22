@@ -1,2 +1,2 @@
-# Skincare
-![Skincare](https://github.com/Edanriell/oldProjects-2/blob/master/AnimatedText/skincare.png?raw=true)
+# Floral Boutique
+![Floral Boutique](https://github.com/Edanriell/Floral-Boutique/blob/master/floral.png?raw=true)
